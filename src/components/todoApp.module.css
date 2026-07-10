@@ -1,0 +1,111 @@
+.titulo {
+    font-size: 2.2rem;
+    color: #8b5cf6; 
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.noteList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.noteItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    background-color: #f3f4f6;
+    border-radius: 12px;
+    border-left: 6px solid #a78bfa;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    gap: 15px; 
+}
+
+.noteItem span {
+    flex: 1; 
+    word-break: break-word; 
+}
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0; 
+}
+
+.noteItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    svg {
+        cursor: pointer;
+        color: #9ca3af; 
+        transition: color 0.2s;
+    }
+
+    svg:hover {
+        color: #8b5cf6;
+    }
+}
+
+.iconsContainer button {
+    background-color: #c4b5fd;
+    color: #4c1d95;
+    font-size: 0.85em;
+}
+
+.editForm {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.editInput {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    outline: none;
+    color: #4b5563;
+    transition: border-color 0.2s;
+}
+
+.editInput:focus {
+    border-color: #8b5cf6; 
+}
+
+.saveButton, .cancelButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    color: white;
+}
+
+.saveButton {
+    background-color: #34d399; 
+}
+
+.cancelButton {
+    background-color: #fb7185; 
+}

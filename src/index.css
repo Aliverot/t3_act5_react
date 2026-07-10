@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  color: #4b5563;
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100dvh;
+  padding: 20px 15px;
+  font-size: 18px;
+}
+
+button {
+  border: 0;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px; /* Bordes más redondeados */
+  transition: all 0.2s ease-in-out; /* Animación suave al pasar el mouse */
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: scale(0.97);
+}
+
+.containerTodoApp {
+  width: 100%;
+  max-width: 600px; 
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); 
+}
